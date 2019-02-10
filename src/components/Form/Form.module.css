@@ -1,0 +1,48 @@
+.webContainer {
+  width: 50%;
+  display: flex;
+  margin-top: 60px;
+}
+
+.mobileContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 32px;
+}
+
+.webFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+  margin-left: 24px;
+}
+
+.mobileFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+.submitButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
+  background: #FFAB44;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 16px;
+  font-weight: bold;
+}
+

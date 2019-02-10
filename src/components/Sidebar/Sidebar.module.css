@@ -1,0 +1,52 @@
+.webContainer {
+  background: #585858;
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mobileContainer {
+  background: #585858;
+  
+  width: 100%;
+  display: flex;
+  padding-top: 32px;
+  padding-left: 15px;
+  padding-right: 40px;
+
+}
+
+.webContentContainer {
+  max-width: 535px;
+  margin-top: 32px;
+  padding-right: 80px;
+
+}
+
+.mobileContentContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.headingText {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.greetingText {
+  color: #EAEAEA;
+  font-family: 'Merriweather', serif;  
+  font-size: 14px;
+
+}
+
+.logo {
+  height: 26px;
+  width: 177px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;  
+}
