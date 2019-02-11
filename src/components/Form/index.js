@@ -10,10 +10,12 @@ class Form extends Component {
     lastName: '',
     address: '',
     address2: '',
+    phone: '',
     firstNameValid: true,
     lastNameValid: true,
     addressValid: true,
-    address2Valid: true
+    address2Valid: true,
+    phoneValid: ''
   }
 
   changeHandler = e => {
@@ -26,11 +28,22 @@ class Form extends Component {
     this.setState(change); 
   }
 
+  phoneChangeHandler = e => {    
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    let val = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');    
+
+    let valid = val !== '';
+    let change = {};
+    change["phone"] = val;
+    change['phoneValid'] = valid;
+    this.setState(change); 
+  }
+
   submitHandler = () => {
-    var disableButton = !this.state.firstName
+    var inValid = !this.state.firstName
                 || !this.state.lastName
                 || !this.state.address;
-    if (disableButton) {
+    if (inValid) {
       alert('Some fields are not valid!');
     } else {
       alert('All done!');
@@ -70,6 +83,13 @@ class Form extends Component {
             label='Address 2' 
             onChange={this.changeHandler} 
             value={this.state.address2}
+            valid={true}
+          />
+          <TextField 
+            name='phone' 
+            label='phone' 
+            onChange={this.phoneChangeHandler} 
+            value={this.state.phone}
             valid={true}
           />
           <div className={styles.buttonContainer}>

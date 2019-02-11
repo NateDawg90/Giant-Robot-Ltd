@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The goal of this project was to design a user details input form for a fictional Giant Robot Ltd. company website. To achieve this, I used React.js, with a structure of nested normal and functional components. The app consists of an outer component that holds a Sidebar and a Form, with the Sidebar holding content on the left and the form with content on the right.
 
 ## Available Scripts
 
